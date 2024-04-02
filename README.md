@@ -11,10 +11,8 @@ this is a tutorial for setting up nginx and an example html page
     first we need to create a droplet in digital ocean and log in to it
     we will be using an arch system for this tutorial
     example command for logging in using ssh and public key: 
-</p>
-    ```sh
     ssh -i C:\Users\abbas\.ssh\do-key Sinaa@146.190.125.148
-    ```
+</p>
 
 <h3>Step 2: Installing the necessary applications</h3>
 <p>
@@ -39,7 +37,11 @@ this is a tutorial for setting up nginx and an example html page
     <img src="https://journaldev.nyc3.cdn.digitaloceanspaces.com/2019/03/nginx-reverse-proxy.png" alt="Nginx" width="500">
     <br />
     to install nginx: 
-    ```sh
     sudo pacman -S nginx
-    ```
+    <br />
+    and then we have to enable it using systemctl (so it will run automatically after system load):
+    sudo systemctl enable nginx
+    <br />
+    now we should start the service:
+    sudo sysetmctl start nginx
 </p>
