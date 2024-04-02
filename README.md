@@ -7,14 +7,13 @@ this is a tutorial for setting up nginx and an example html page
 <br/>
 <br/>
 <h3>Step 1: Creating a Droplet</h3>
-<p>
+
     first we need to create a droplet in digital ocean and log in to it
     we will be using an arch system for this tutorial
     example command for logging in using ssh and public key: 
     ```sh
     ssh -i C:\Users\abbas\.ssh\do-key Sinaa@146.190.125.148
     ```
-</p>
 
 <h3>Step 2: Installing the necessary applications</h3>
 <p>
